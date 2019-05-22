@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <files-path
+        name="AAA"
+        path="damImage/" />
+    <!--name은 아무거나, path는 갤러리내의 생성할 폴더명-->
+</paths>

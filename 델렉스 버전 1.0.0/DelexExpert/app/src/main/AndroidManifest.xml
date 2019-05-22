@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.delex.delexexpert">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 인터넷 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 네트워크 상태 접근 -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_expert"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_expert_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.delex.delexexpert.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <!-- 액티비티 -->
+        <activity
+            android:launchMode="singleInstance"
+            android:name="com.delex.delexexpert.MainActivity3"
+            android:screenOrientation="portrait" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>

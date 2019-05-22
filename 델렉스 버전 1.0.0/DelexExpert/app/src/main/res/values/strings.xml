@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">델렉스 엑스퍼트</string>
+    <string name="main_url">http://driver.delta-on.com</string>
+    <string name="login_url">http://driver.delta-on.com/login.php</string>
+    <!--<string name="main_url">https://m.naver.com</string>-->
+</resources>
